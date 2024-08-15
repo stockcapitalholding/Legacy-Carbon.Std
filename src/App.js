@@ -211,7 +211,7 @@ function App() {
             <NavLinks open={menuOpen} style={{ fontSize: 20, fontWeight: "bold" }}>
               <li><a href="https://carbonstd.com/" target="_blank">Carbon.Std</a></li>
               <li><a href="https://carbonstd.gitbook.io/carbon.std" target="_blank">About</a></li>
-              <li><a href="https://testnets.opensea.io/collection/carbon-std" target="_blank">Collection</a></li>
+              <li><a href="https://opensea.io/CarbonStd" target="_blank">Collection</a></li>
             </NavLinks>
           </div>
           <div className="social-links">
