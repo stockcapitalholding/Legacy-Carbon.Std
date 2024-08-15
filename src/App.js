@@ -232,8 +232,7 @@ function App() {
         </s.TextTitle>
       </s.Container>
 
-      {/* Adding the iframe */}
-      <s.Container flex={1} ai={"center"} style={{ padding: 24 }}>
+      <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
         <iframe
           src="https://embed.ipfscdn.io/ipfs/bafybeicd3qfzelz4su7ng6n523virdsgobrc5pcbarhwqv3dj3drh645pi/?contract=0x9D4263E7af76FE039FcE6405C4169A450371Ce34&chain=%7B%22name%22%3A%22Ethereum+Mainnet%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2F1.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22eth%22%2C%22chainId%22%3A1%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22ethereum%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmdwQDr6vmBtXmK2TmknkEuZNoaDqTasFdZdu3DRw8b2wt%22%2C%22width%22%3A1000%2C%22height%22%3A1628%2C%22format%22%3A%22png%22%7D%7D&clientId=9a4b692962c8c63f4c6e01d09f3a9f69&theme=dark&primaryColor=cyan"
           width="600px"
@@ -241,9 +240,24 @@ function App() {
           style={{ maxWidth: "100%" }}
           frameborder="0"
         ></iframe>
-      </s.Container>
-
-
+        <s.SpacerMedium />
+        <s.Container
+          flex={1}
+          jc={"center"}
+          ai={"center"}
+          style={{ backgroundColor: "rgb(17, 17, 17)", padding: 24 }}
+        >
+          <s.TextTitle style={{ textAlign: "center", fontSize: 48, fontWeight: "bold" }}>
+          Carbon.Std Legacy Airdrop
+        </s.TextTitle>
+          <s.TextTitle style={{ textAlign: "center", padding: 24 }}>
+          The Carbon.Std project, in developing the Legacy collection, drew inspiration from the concept of reconnection between humanity and technology amidst environmental devastation, as described earlier. The collection reflects a utopian future marked by chaos, where Earth has been plunged into an abyss of destruction due to environmental neglect. In this scenario, Carbon.Std sought to capture the iconic moment where a human hand, filled with desperation, reaches out to connect with an advanced robotic hand, symbolizing hope and alliance.
+          </s.TextTitle>
+          <s.TextTitle style={{ textAlign: "center", padding: 24 }}>
+          The Legacy collection was designed to represent the imminent touch between man and machine as a powerful metaphor for the final attempt to save the planet. The project aims to convey the message that, even in the face of devastation, it is still possible to join forces to reverse the damage and rebuild Earth from the ashes of chaos. Carbon.Std utilized this narrative to highlight the importance of collaboration between humanity and technology, reinforcing the company's mission to promote environmental preservation and usher in a new era of sustainability and global responsibility.
+          </s.TextTitle>
+        </s.Container>
+      </ResponsiveWrapper>
     </s.Screen>
   );
 }
